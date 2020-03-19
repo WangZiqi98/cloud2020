@@ -7,3 +7,5 @@
 /cloud-provide-payment8002/target/
 /cloud-provider-payment8001/target/
 /cloud-provider-payment8004/target/
+.idea/
+*.iml
