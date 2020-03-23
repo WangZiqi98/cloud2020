@@ -10,6 +10,6 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://eureka7002.com:7002/eureka
-  server:
-    enable-self-preservation: false    #Eureka的自我保护机制  默认开启
-    eviction-interval-timer-in-ms: 2000  #清理无效节点的时间间隔  默认为60000毫秒 即60秒
+  #server:
+   # enable-self-preservation: false    #Eureka的自我保护机制  默认开启
+    #eviction-interval-timer-in-ms: 2000  #清理无效节点的时间间隔  默认为60000毫秒 即60秒

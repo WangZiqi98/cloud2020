@@ -1,4 +1,4 @@
-package com.wzq.sc;
+package com.wzq.sc.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
