@@ -21,8 +21,12 @@ spring:
           uri: lb://cloud-payment-service
           predicates:
             - Path=/payment/lb/**    #断言,路径相匹配的进行路由
-            - After=2020-03-27T19:15:34.072+08:00[Asia/Shanghai]
-            -
+#            - After=2020-03-27T19:15:34.072+08:00[Asia/Shanghai]
+#            - Cookie=username,wzq
+#            - Header=X-Request-Id,\d+  #请求头要有X-Request-Id属性  并且值为整数的正则表达式
+#          filters:
+#            - AddRequestParameter=X-Request-Id,1024 #过滤器工厂会在匹配的请求头加上一对请求头,名称为X-Request-Id值为1024
+
 
 
 
