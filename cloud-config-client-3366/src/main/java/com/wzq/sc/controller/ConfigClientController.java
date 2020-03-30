@@ -1,11 +1,14 @@
 package com.wzq.sc.controller;
 
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Slf4j
 @RefreshScope
 public class ConfigClientController {
     @Value("${config.info}")
@@ -17,6 +20,6 @@ public class ConfigClientController {
 
     @GetMapping("/getConfigInfo")
     public String getConfigInfo() {
-        return "serverPort: " + serverPort + "\t\n\n configInfo: " + configInfo;
+        return "serverPort: "+serverPort+"\t\n\n configInfo: "+configInfo;
     }
 }
